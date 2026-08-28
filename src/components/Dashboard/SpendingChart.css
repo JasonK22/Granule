@@ -1,0 +1,56 @@
+.spending-chart-container {
+  background: linear-gradient(150deg, var(--bg-surface-2), var(--bg-surface));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.28);
+}
+
+.spending-chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.spending-chart-container h3 {
+  font-size: 16px;
+  color: var(--text-primary);
+  letter-spacing: 0.2px;
+  font-weight: 600;
+}
+
+.chart-toggle {
+  display: flex;
+  gap: 2px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: 3px;
+}
+
+.chart-toggle button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.chart-toggle button.active {
+  background: linear-gradient(120deg, var(--gold-soft), var(--gold));
+  color: #1a1206;
+}
+
+.chart-toggle button:not(.active):hover { color: var(--gold-soft); }
+
+.chart-empty { padding: 40px 20px; margin: 0; }

@@ -1,0 +1,29 @@
+.dashboard {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 42px 48px;
+}
+
+.dashboard-empty {
+  max-width: 480px;
+  margin: 60px auto 0;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.dashboard-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1.15fr 0.85fr;
+}
+
+@media (max-width: 768px) {
+  .dashboard { padding: 28px 18px; }
+  .summary-cards { gap: 12px; }
+  .dashboard-grid { grid-template-columns: 1fr; }
+}

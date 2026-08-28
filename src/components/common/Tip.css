@@ -1,0 +1,35 @@
+.tip-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 13px 14px;
+  background: rgba(232, 179, 77, 0.06);
+  border: 1px solid rgba(232, 179, 77, 0.22);
+  border-radius: var(--radius-sm);
+  margin-bottom: 20px;
+}
+
+.tip-icon {
+  flex-shrink: 0;
+  color: var(--gold);
+  margin-top: 1px;
+}
+
+.tip-card p {
+  flex: 1;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.tip-card strong { color: var(--gold-soft); font-weight: 600; }
+
+.tip-dismiss {
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 2px;
+}
+.tip-dismiss:hover { color: var(--text-primary); }

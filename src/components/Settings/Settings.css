@@ -1,0 +1,110 @@
+.settings-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 42px 48px 60px;
+}
+
+.settings-section {
+  background: linear-gradient(150deg, var(--bg-surface-2), var(--bg-surface));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  margin-bottom: 18px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.24);
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.section-heading h3 {
+  font-size: 15.5px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.section-description {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+
+.currency-select { max-width: 320px; }
+
+.category-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.category-tag {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-pill);
+  padding: 6px 8px 6px 6px;
+  font-size: 13px;
+  color: var(--text-primary);
+}
+
+.category-tag-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a1206;
+  flex-shrink: 0;
+}
+
+.category-tag button {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  padding: 1px;
+  border-radius: 50%;
+  transition: color 0.15s ease;
+}
+.category-tag button:hover { color: var(--ember); }
+
+.add-category-form {
+  display: flex;
+  gap: 10px;
+}
+.add-category-form input { flex: 1; }
+.add-category-form .btn { flex-shrink: 0; }
+
+.about-text {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+.about-version {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.danger-zone {
+  border-color: rgba(217, 89, 63, 0.3);
+  background: linear-gradient(150deg, rgba(217, 89, 63, 0.06), var(--bg-surface));
+}
+
+.danger-heading { color: var(--ember); }
+
+@media (max-width: 600px) {
+  .settings-page { padding: 28px 18px 40px; }
+  .add-category-form { flex-direction: column; }
+}

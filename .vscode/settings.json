@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^cd \"c:\\\\Users\\\\gspar\\\\OneDrive\\\\Desktop\\\\AUGUST REACT\\\\PERSONAL PROJECT GRANULE\\\\Granule\" && npm install$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

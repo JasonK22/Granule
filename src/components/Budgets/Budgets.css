@@ -1,0 +1,9 @@
+.budgets-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 42px 48px;
+}
+
+@media (max-width: 768px) {
+  .budgets-page { padding: 28px 18px; }
+}

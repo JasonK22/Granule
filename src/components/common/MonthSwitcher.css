@@ -1,0 +1,47 @@
+.month-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: 5px 6px;
+}
+
+.month-switcher-arrow {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  transition: all 0.15s ease;
+}
+.month-switcher-arrow:hover { color: var(--gold-soft); background: rgba(232, 179, 77, 0.1); }
+
+.month-switcher-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  padding: 0 8px;
+  min-width: 108px;
+  text-align: center;
+}
+
+.month-switcher-current {
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  color: var(--gold-soft);
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 4px 9px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  margin-left: 2px;
+  transition: all 0.15s ease;
+}
+.month-switcher-current:hover { border-color: var(--gold); background: rgba(232, 179, 77, 0.08); }
