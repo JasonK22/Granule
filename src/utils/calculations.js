@@ -43,7 +43,7 @@ export const isBudgetExceeded = (spent, limit) => {
 
 export const getMonthTransactions = (transactions, year, month) => {
   // Compare the "YYYY-MM-DD" string's own year/month directly instead of
-  // parsing it into a Date object — `new Date('2026-01-01')` is parsed as
+  // parsing it into a Date object. `new Date('2026-01-01')` is parsed as
   // UTC midnight, which can shift into the wrong month once converted to
   // a negative-UTC-offset local time (e.g. anywhere in the Americas).
   return transactions.filter(t => {

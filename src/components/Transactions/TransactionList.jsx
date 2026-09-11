@@ -63,7 +63,7 @@ export const TransactionList = () => {
         <div className="empty-state dashboard-empty">
           <div className="empty-state-icon"><Wallet size={22} /></div>
           <h4>Add an account first</h4>
-          <p>Transactions are logged under an account — create one to start your ledger.</p>
+          <p>Transactions are logged under an account. Create one to start your ledger.</p>
           <button className="btn btn-primary" onClick={openAccountCreation}>
             Create account
           </button>
@@ -157,7 +157,7 @@ export const TransactionList = () => {
         isOpen={showForm}
         onClose={handleCloseForm}
         title={editingId ? 'Edit transaction' : 'Add transaction'}
-        subtitle="Log what came in or went out — it'll show up on your dashboard instantly."
+        subtitle="Log what came in or went out. It'll show up on your dashboard instantly."
       >
         <TransactionForm
           editingId={editingId}

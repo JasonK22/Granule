@@ -69,7 +69,7 @@ export const Budgets = () => {
 
       {Object.keys(state.budgets).length === 0 && (
         <Tip id="budgets-intro">
-          A budget is a recurring monthly cap on a category — set it once, and Granule measures
+          A budget is a recurring monthly cap on a category. Set it once, and Granule measures
           each new month's spending against it from a clean slate.
         </Tip>
       )}
@@ -85,7 +85,7 @@ export const Budgets = () => {
         isOpen={showForm}
         onClose={handleCloseForm}
         title={editingCategory ? `Edit ${editingCategory} budget` : 'New budget'}
-        subtitle="Set the monthly limit — spending against it resets automatically each month."
+        subtitle="Set the monthly limit. Spending against it resets automatically each month."
       >
         <BudgetForm
           editingCategory={editingCategory}

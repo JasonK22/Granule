@@ -18,7 +18,7 @@ export const BudgetList = ({ onEdit, transactions, budgets, currency }) => {
 
   const handleDeleteBudget = async (category) => {
     const ok = await confirm(
-      `Remove the budget for "${category}"? Your spending history stays — the monthly limit just goes away.`,
+      `Remove the budget for "${category}"? Your spending history stays. The monthly limit just goes away.`,
       { title: 'Remove budget', danger: true, confirmLabel: 'Remove budget' }
     );
     if (ok) {
@@ -32,7 +32,7 @@ export const BudgetList = ({ onEdit, transactions, budgets, currency }) => {
       <div className="empty-state">
         <div className="empty-state-icon"><Target size={22} /></div>
         <h4>No budgets yet</h4>
-        <p>Pick a category and set a monthly limit — Granule tracks your spending against it automatically.</p>
+        <p>Pick a category and set a monthly limit. Granule tracks your spending against it automatically.</p>
       </div>
     );
   }
@@ -58,7 +58,7 @@ export const BudgetList = ({ onEdit, transactions, budgets, currency }) => {
                   <p className="budget-amounts">
                     {formatCurrency(spent, currency)} of {formatCurrency(limit, currency)}
                     {exceeded && (
-                      <span className="exceeded-label"> — over by {formatCurrency(Math.abs(remaining), currency)}</span>
+                      <span className="exceeded-label"> - over by {formatCurrency(Math.abs(remaining), currency)}</span>
                     )}
                   </p>
                 </div>

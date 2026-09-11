@@ -1,16 +1,16 @@
 :root {
   /* ============================================================
-     GRANULE DESIGN SYSTEM — warm gold / dark cinema
+    GRANULE DESIGN SYSTEM, warm gold / dark cinema
      ============================================================ */
 
-  /* Backgrounds — near-black with a warm brown undertone, never blue-black */
+  /* Backgrounds, near-black with a warm brown undertone, never blue-black */
   --bg-void: #0a0704;
   --bg-base: #100b06;
   --bg-surface: #17110a;
   --bg-surface-2: #1f170d;
   --bg-surface-3: #2a2011;
 
-  /* Gold — the primary signal */
+  /* Gold, the primary signal */
   --gold: #e8b34d;
   --gold-strong: #c8912f;
   --gold-soft: #f6d98a;
@@ -50,7 +50,7 @@
   --border-color-light: var(--border);
   --text-light: var(--text-muted);
 
-  /* Geometry — sharp, instrument-panel edges by default */
+  /* Geometry, sharp, instrument-panel edges by default */
   --radius-sm: 3px;
   --radius-md: 5px;
   --radius-pill: 999px;
@@ -103,7 +103,7 @@ button, input, select, textarea {
 ::-webkit-scrollbar-thumb:hover { background: var(--gold-strong); }
 
 /* ============================================================
-   Film-grain overlay — the "granule" texture, kept faint
+  Film-grain overlay, the "granule" texture, kept faint
    ============================================================ */
 .grain-overlay {
   position: fixed;
@@ -116,7 +116,7 @@ button, input, select, textarea {
 }
 
 /* ============================================================
-   Kinetic reveal — the Netflix-style kicker/title/subtitle beat
+  Kinetic reveal, the Netflix-style kicker/title/subtitle beat
    ============================================================ */
 @keyframes granule-reveal {
   from { opacity: 0; transform: translateY(10px); }

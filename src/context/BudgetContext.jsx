@@ -130,7 +130,7 @@ export const BudgetProvider = ({ children }) => {
 
   // Load from localStorage on mount. Saved data is merged over the
   // defaults (not swapped in wholesale) so fields added after a user's
-  // first save — like currency — always have a sane value.
+  // first save, like currency, always have a sane value.
   useEffect(() => {
     const savedState = localStorage.getItem('budgetAppState');
     if (savedState) {
@@ -147,7 +147,7 @@ export const BudgetProvider = ({ children }) => {
   }, []);
 
   // Save to localStorage on state change, but only once hydration has
-  // completed — otherwise the very first render's empty initial state
+  // completed, otherwise the very first render's empty initial state
   // would briefly overwrite whatever was already saved.
   useEffect(() => {
     if (!state.isHydrated) return;

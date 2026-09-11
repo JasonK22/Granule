@@ -130,7 +130,7 @@ export const Sidebar = () => {
                 </div>
 
                 {state.accounts.length === 0 && (
-                  <p className="account-menu-empty">No accounts yet — add one below to start tracking.</p>
+                  <p className="account-menu-empty">No accounts yet. Add one below to start tracking.</p>
                 )}
 
                 <div className="account-list">

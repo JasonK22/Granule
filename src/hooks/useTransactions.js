@@ -4,7 +4,7 @@ import { getMonthTransactions } from '../utils/calculations';
 
 /**
  * Returns transactions for the current account. Pass { year, month } to
- * additionally scope the result to that calendar month — used by pages
+ * additionally scope the result to that calendar month, used by pages
  * that track spending against a monthly budget.
  */
 export const useTransactions = (monthFilter) => {
@@ -17,7 +17,7 @@ export const useTransactions = (monthFilter) => {
 
   // Depend on the primitive year/month rather than the monthFilter object
   // itself, since callers typically pass a freshly-created object each
-  // render — using the object would defeat this memoization entirely.
+  // render, using the object would defeat this memoization entirely.
   const scopedTransactions = useMemo(() => {
     if (!monthFilter) return currentAccountTransactions;
     return getMonthTransactions(currentAccountTransactions, monthFilter.year, monthFilter.month);

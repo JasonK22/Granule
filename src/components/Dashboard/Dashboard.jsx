@@ -36,7 +36,7 @@ export const Dashboard = () => {
         <div className="empty-state dashboard-empty">
           <div className="empty-state-icon"><Wallet size={22} /></div>
           <h4>Add your first account to start tracking</h4>
-          <p>Give it a name — "Checking", "Cash", whatever fits how you spend — and Granule takes it from there.</p>
+          <p>Give it a name, such as "Checking" or "Cash", whatever fits how you spend, and Granule takes it from there.</p>
           <button className="btn btn-primary" onClick={openAccountCreation}>
             Create account
           </button>

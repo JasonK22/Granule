@@ -27,7 +27,7 @@ export const Settings = () => {
 
   const handleDeleteCategory = async (category) => {
     const ok = await confirm(
-      `Delete "${category}"? Existing transactions keep the label — it just won't be selectable for new ones.`,
+      `Delete "${category}"? Existing transactions keep the label. It just won't be selectable for new ones.`,
       { title: 'Delete category', danger: true, confirmLabel: 'Delete' }
     );
     if (ok) {
@@ -71,7 +71,7 @@ export const Settings = () => {
         <p className="section-description">Amounts across Granule will display in this currency.</p>
         <select value={state.currency} onChange={handleCurrencyChange} className="form-input currency-select">
           {SUPPORTED_CURRENCIES.map(({ code, label }) => (
-            <option key={code} value={code}>{code} — {label}</option>
+            <option key={code} value={code}>{code} - {label}</option>
           ))}
         </select>
       </div>
@@ -133,7 +133,7 @@ export const Settings = () => {
           <h3>About</h3>
         </div>
         <p className="about-text">
-          Granule is a personal budget tracker that lives entirely on this device — no accounts,
+          Granule is a personal budget tracker that lives entirely on this device. No accounts,
           no servers, no one else sees your numbers. Add what you earn and spend, set limits for
           the categories that matter, and let the dashboard do the arithmetic.
         </p>

@@ -35,7 +35,7 @@ export const QuickAddButton = () => {
         isOpen={quickAddOpen}
         onClose={() => setQuickAddOpen(false)}
         title="Add transaction"
-        subtitle="Log what came in or went out — it'll show up on your dashboard instantly."
+        subtitle="Log what came in or went out. It'll show up on your dashboard instantly."
       >
         <TransactionForm
           onClose={() => setQuickAddOpen(false)}

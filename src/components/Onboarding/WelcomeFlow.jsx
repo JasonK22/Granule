@@ -50,9 +50,9 @@ export const WelcomeFlow = ({ onComplete }) => {
           <div className="welcome-step reveal reveal-1">
             <div className="welcome-mark"><GranuleMark size={40} /></div>
             <span className="welcome-kicker">WELCOME</span>
-            <h1>This is Granule.</h1>
+            <h1>This is Granule by JasonK.</h1>
             <p className="welcome-body">
-              A personal budget tracker that lives right here on your device — nothing to sync,
+              A personal budget tracker that lives right here on your device, nothing to sync,
               nothing leaves your browser. Let's set up your first account so you can start
               logging what comes in and what goes out.
             </p>
@@ -67,7 +67,7 @@ export const WelcomeFlow = ({ onComplete }) => {
             <span className="welcome-kicker">STEP 1 OF 2</span>
             <h1>Name your first account</h1>
             <p className="welcome-body">
-              Accounts keep your money organized — maybe "Cash", "Checking", or "Card".
+              Accounts keep your money organized. Maybe "Cash", "Checking", or "Card".
               You can add more anytime from the account menu in the sidebar.
             </p>
             <div className="welcome-form">
